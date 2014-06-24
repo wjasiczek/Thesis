@@ -1,0 +1,12 @@
+
+            for (var i=0; i<6; i++)
+            {
+                for (var j=0; j<6; j++)
+                {
+                    if (i>0)
+                    {
+                        tab1[0, 0] = tab1[i+1, j+1];
+                        tab1[i, j] = tab1[i+j, i-j];
+                    }
+                }
+            }
